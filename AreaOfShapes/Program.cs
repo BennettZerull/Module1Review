@@ -29,11 +29,25 @@
             return area;
             //returned a value for the area of the triangle
         }
+
+        public static double AreaOfRectangle()
+        {
+            double rectangleBase = 4;
+            //declared the length of the base of the rectangle
+            double rectangleHeight = 4;
+            //declared the length of the height of the rectangle
+            double area = (rectangleHeight * rectangleBase);
+            //declared a formula for the area of a rectangle
+            Console.WriteLine("The area of a rectangle is " + area);
+            return area;
+            //returned a value for the area of the rectangle
+        }
         static void Main(string[] args)
         //used main method to call the different shapes and their areas
         {
             AreaOfCircle();
             AreaOfTriangle();
+            AreaOfRectangle();
         }
     }
 }
