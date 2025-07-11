@@ -32,7 +32,7 @@
 
         public static double AreaOfRectangle()
         {
-            double rectangleBase = 4;
+            double rectangleBase = 8;
             //declared the length of the base of the rectangle
             double rectangleHeight = 4;
             //declared the length of the height of the rectangle
@@ -41,6 +41,18 @@
             Console.WriteLine("The area of a rectangle is " + area);
             return area;
             //returned a value for the area of the rectangle
+            //changed some values to make the areas different when called
+        }
+
+        public static double AreaOfSquare()
+        {
+            double sideLength = 4;
+            //declared a value for the side length of the square, because this is a perfect square this is the only value you need
+            double area = (sideLength * sideLength);
+            //declared a formula for the area of a square
+            Console.WriteLine("The area of a square is " + area);
+            return area;
+            //returned a value for the area of a square
         }
         static void Main(string[] args)
         //used main method to call the different shapes and their areas
@@ -48,6 +60,7 @@
             AreaOfCircle();
             AreaOfTriangle();
             AreaOfRectangle();
+            AreaOfSquare();
         }
     }
 }
